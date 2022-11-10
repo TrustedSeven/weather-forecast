@@ -57,9 +57,14 @@ const App = () => {
                 )}        
             </div>
              <div className='col-md-8' style={{padding: '0px'}}>
-                <Wrapper apiKey='API_KEY'>
-                    <Map></Map>
-                </Wrapper>
+                <iframe
+                width="100%"
+                height="100%"
+                style={{border:"0"}}
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBWsm8rfpNzpYQDfLg8Ba7InQ6JhK85S5w&q=Space+Needle,Seattle+WA">
+                </iframe>
              </div>
         </div>
     )
